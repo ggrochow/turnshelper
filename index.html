@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Turns Hub Helper</title>
+
+    <link rel="stylesheet" href="./bulma.css">
+    <script src="./moment.js" type="application/javascript"></script>
+    <script src="./index.js" type="application/javascript"></script>
+</head>
+
+<div class="container">
+
+    <form id="addUserForm">
+        <div class="field has-addons">
+            <div class="control">
+                <input class="input" title='name' type="text" id="userNameInput">
+            </div>
+            <div class="control">
+                <button class="button is-info" type="submit" >
+                    Add User
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <button class="button" id="hostPostButton">
+        Host Posted
+    </button>
+
+    <table id="users" class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Turns</th>
+            <th>Hunts</th>
+            <th>Joined</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody id="usersBody">
+        <tr class="user is-hidden">
+            <td class="name"></td>
+            <td class="turns"></td>
+            <td class="hunts"></td>
+            <td class="joinedAt"></td>
+            <td class="controls" data-index="0" >
+                <button class="questPost button is-small">Posted</button>
+                <button class="removeUser button is-small">Remove</button>
+            </td>
+        </tr>
+
+        <tr class="user is-hidden">
+            <td class="name"></td>
+            <td class="turns"></td>
+            <td class="hunts"></td>
+            <td class="joinedAt"></td>
+            <td class="controls" data-index="1">
+                <button class="questPost button is-small">Posted</button>
+                <button class="removeUser button is-small">Remove</button>
+           </td>
+        </tr>
+
+        <tr class="user is-hidden">
+            <td class="name"></td>
+            <td class="turns"></td>
+            <td class="hunts"></td>
+            <td class="joinedAt"></td>
+            <td class="controls" data-index="2">
+                <button class="questPost button is-small">Posted</button>
+                <button class="removeUser button is-small">Remove</button>
+           </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <button class="button" id="clearListButton">Reset All</button>
+</div>
+</html>
